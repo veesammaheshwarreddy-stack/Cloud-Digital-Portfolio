@@ -1,0 +1,298 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Digital Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: #38bdf8;
+        }
+        
+        nav {
+            background: #1e293b;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+        }
+        
+        nav a:hover {
+            color: #38bdf8;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 45px 20px;
+            background: white;
+        }
+        
+        .profile {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: #0ea5e9;
+            color: white;
+            font-size: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+        
+        .hero h2 {
+            color: #0369a1;
+        }
+        
+        section {
+            max-width: 900px;
+            margin: 22px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+        
+        section h2 {
+            color: #0369a1;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #bae6fd;
+            padding-bottom: 8px;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: #e0f2fe;
+            color: #075985;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+        
+        .project {
+            background: #f8fafc;
+            padding: 15px;
+            margin: 12px 0;
+            border-left: 4px solid #0ea5e9;
+        }
+        
+        button {
+            background: #0284c7;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0369a1;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+        
+        footer {
+            text-align: center;
+            background: #0f172a;
+            color: white;
+            padding: 18px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 600px) {
+            section {
+                margin: 15px;
+                padding: 18px;
+            }
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Digital Portfolio</h1>
+        <p>Cloud-Based Personal Portfolio Website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="profile">GV</div>
+        <h2>G. Vardhini</h2>
+        <p>AI & Data Science Engineering Student</p>
+        <p>Building intelligent systems and data-driven solutions.</p>
+        <br>
+        <button onclick="downloadPortfolio()">Download Portfolio</button>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an Artificial Intelligence and Data Science engineering student interested in Python programming, machine learning, web development, and cloud computing. I enjoy developing practical applications to solve real-world problems.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="project">
+            <h3>B.Tech - Artificial Intelligence and Data Science</h3>
+            <p>Prathyusha Engineering College</p>
+            <p>2024 - 2028</p>
+        </div>
+        <div class="project">
+            <h3>Intermediate - MPC</h3>
+            <p>Narayana Junior College</p>
+            <p>2022 - 2024</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-list">
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">SQL</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Data Science</span>
+            <span class="skill">Cloud Computing</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>AI Resume Analyzer</h3>
+            <p>Analyzes resume information and compares skills with job requirements.</p>
+        </div>
+
+        <div class="project">
+            <h3>Smart Expense Tracker</h3>
+            <p>Helps users record expenses and understand their spending patterns.</p>
+        </div>
+
+        <div class="project">
+            <h3>Cloud Digital Portfolio</h3>
+            <p>A personal website for presenting education, skills, projects, and achievements.</p>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates & Achievements</h2>
+        <ul>
+            <li>Python Essentials - Cisco Networking Academy</li>
+            <li>Python Programming Training - Infosys Springboard</li>
+            <li>YUVA AI For All - TCS iON and IndiaAI</li>
+        </ul>
+        <p>Edit this list to include only certificates you have earned.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="status"></p>
+
+        <p>Email: Add your email address</p>
+        <p>LinkedIn:
+            <a href="https://linkedin.com/in/gajula-vardhini-10ab8b32b" target="_blank">Visit my LinkedIn</a>
+        </p>
+        <p>GitHub:
+            <a href="https://github.com/vardhinigajula79-oss" target="_blank">Visit my GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 G. Vardhini | Cloud Digital Portfolio</p>
+        <p>Designed using HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script>
+        function downloadPortfolio() {
+            const blob = new Blob(
+                [document.documentElement.outerHTML], {
+                    type: "text/html"
+                }
+            );
+
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "MyPortfolio.html";
+            link.click();
+
+            URL.revokeObjectURL(link.href);
+        }
+
+        document.getElementById("contactForm").addEventListener("submit",
+            function(event) {
+                event.preventDefault();
+
+                document.getElementById("status").textContent =
+                    "Demo only: the message has not been sent to a server.";
+
+                this.reset();
+            }
+        );
+    </script>
+
+</body>
+
+</html>
+```
